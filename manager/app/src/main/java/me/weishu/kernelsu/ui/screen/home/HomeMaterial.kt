@@ -96,6 +96,7 @@ fun HomePagerMaterial(
             if (state.checkUpdateEnabled) {
                 UpdateCard(state = state, actions = actions)
             }
+            WarningCard(stringResource(id = R.string.home_zakuwarning), level = WarningLevel.Notice)
             if (state.showManagerPrBuildWarning) {
                 WarningCard(stringResource(id = R.string.home_pr_build_warning), level = WarningLevel.Notice)
             } else if (state.showKernelPrBuildWarning) {
